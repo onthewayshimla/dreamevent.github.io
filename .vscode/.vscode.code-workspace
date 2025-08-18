@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../destinationpageimages"
+		},
+		{
+			"path": "../frontpageimages"
+		},
+		{
+			"path": "../galleryimages"
+		}
+	]
+}
