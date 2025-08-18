@@ -20,33 +20,61 @@
       text-align: center;
     }
 
-    .logo {
-      font-family: 'Great Vibes', cursive;
-      font-size: 36px;
-      font-weight: bold;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    nav ul li a {
-  color: white;
+   .logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
-  font-family: 'Dancing Script', cursive;
-  font-size: 20px;
-  transition: all 0.3s ease;
 }
 
-nav ul li a:hover,
+.logo-img {
+  height: 200px;
+}
+
+.logo-text {
+  font-family: 'Hello Paris', cursive;
+  font-size: 28px;
+  color: black;
+}
+
+
+   nav {
+  background-color: white; /* or your preferred color */
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #ff4081;
+  text-decoration: underline;
+}
 nav ul li a.active {
   border-bottom: 2px solid white;
   padding-bottom: 3px;
 }
+ nav a.active {
+  color: #e91e63 !important; /* Bright pink highlight */
+  border-bottom: 3px solid #e91e63;
+  padding-bottom: 2px;
+}
+
 
     section {
       padding: 40px 20px;
@@ -88,20 +116,31 @@ nav ul li a.active {
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">Destination Wedding in Shimla</div>
+<header style="background-color: white; padding: 20px 60px;">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+
+    <!-- LOGO LEFT -->
+    <a href="index.html" class="logo-link" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+      <img src="file:///H:/kotirow%20video/ChatGPT%20Image%20Jul%209,%202025,%2005_09_41%20PM%20(1).png" alt="Logo" class="logo-img" style="height: 150px;">
+      <div class="logo-text" style="font-family: 'Hello Paris', cursive; font-size: 42px; color: black;">
+      </div>
+    </a>
+
+    <!-- NAVIGATION RIGHT -->
     <nav>
-      <ul>
-        <li><a href="frontpage.html">Home</a></li>
-        <li><a href="destination.html">Destinations</a></li>
-        <li><a href="packages (2).html">Packages</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact(2).html">Contact</a></li>
-         <li> <a href="testimonials(2).html" class="active"> Testimonials</a></li>
-         <li><a href="aboutus(2).html" >About Us</a></li>
+      <ul style="list-style: none; display: flex; gap: 40px; margin: 0; padding: 0;">
+        <li><a href="index.html" style="color:black; text-decoration: none; font-size: 20px; font-weight: 600;">Home</a></li>
+        <li><a href="destination.html" style="color: black; text-decoration: none; font-size: 20px; font-weight: 600;">Destinations</a></li>
+        <li><a href="packages (2).html" style="color: black; text-decoration: none; font-size: 20px; font-weight: 600;">Packages</a></li>
+        <li><a href="gallery.html" style="color: black; text-decoration: none; font-size: 20px; font-weight: 600;">Gallery</a></li>
+        <li><a href="contact(2).html" style="color:black; text-decoration: none; font-size: 20px; font-weight: 600;">Contact</a></li>
+        <li><a href="testimonials(2).html" class="active" style="color:black; text-decoration: none; font-size: 20px; font-weight: 600;">Testimonials</a></li>
+        <li><a href="aboutus(2).html" style="color:black; text-decoration: none; font-size: 20px; font-weight: 600;">About Us</a></li>
       </ul>
     </nav>
-  </header>
+
+  </div>
+</header>
 
   <section>
     <h2>What Our Clients Say</h2>
@@ -126,15 +165,15 @@ nav ul li a.active {
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; text-align: left;">
         <div style="flex: 1; min-width: 200px;">
           <h3 style="color:#800020;">Contact Us</h3>
-          <p><strong>Destination Wedding in Shimla</strong></p>
+          <p><strong>My Dream Events</strong></p>
           <p>Shimla, Himachal Pradesh, India</p>
           <p>Phone: <a href="tel:+918219559908" style="color:#800020; text-decoration: none;">+91-8219559908</a></p>
-          <p>Email: <a href="mailto:mydreameventsshimla@gmail.com" style="color:#800020; text-decoration: none;">mydreameventsshimla@gmail.com</a></p>
+          <p>Email: <a href="mailto:team@mydreamevent.in" style="color:#800020; text-decoration: none;">team@mydreamevent.in</a></p>
         </div>
 
         <div style="flex: 1; min-width: 200px;">
           <h3 style="color:#800020;">Quick Links</h3>
-          <p><a href="frontpage.html" style="color:#800020; text-decoration: none;">Home</a></p>
+          <p><a href="index.html" style="color:#800020; text-decoration: none;">Home</a></p>
           <p><a href="packages (2).html" style="color:#800020; text-decoration: none;">Packages</a></p>
           <p><a href="gallery.html" style="color:#800020; text-decoration: none;">Gallery</a></p>
           <p><a href="contact(2).html" style="color:#800020; text-decoration: none;">Contact Us</a></p>
@@ -148,7 +187,7 @@ nav ul li a.active {
         </div>
       </div>
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ccc;" />
-      <p style="text-align: center; color:#800020;">&copy; 2025 Destination Wedding in Shimla – All Rights Reserved</p>
+      <p style="text-align: center; color:#800020;">&copy; 2025 My Dream Events – All Rights Reserved</p>
     </div>
   </footer>
 </body>
